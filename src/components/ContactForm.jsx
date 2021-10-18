@@ -2,10 +2,9 @@ import React, {useState, useRef} from 'react'
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { baseURL as axios} from './axios'
 import './ContactForm.css'
 
-function ContactForm({contactStyles, handleCancel, message, setMessage}) {
+function ContactForm({contactStyles, handleCancel}) {
     const [contactDetails, setContactDetails] = useState({})
     const formRef = useRef();
 

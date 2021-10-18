@@ -7,7 +7,6 @@ import ContactForm from './ContactForm'
 function Nav() {
     const deviceWidth = window.innerWidth
 
-    // const [selected, setSelected] = useState('home')
     const [contactStyles, setContactStyles] = useState({
         visibility: 'hidden',
         top: '-30vh'
@@ -22,7 +21,6 @@ function Nav() {
     })
 
     const [showNav, setShowNav] = useState(true)
-    const [message, setMessage] = useState(false)
 
     const history = useHistory()
 
@@ -57,10 +55,6 @@ function Nav() {
     
     return (
         <div className='Nav' id='home'>
-            {
-                message.message &&
-                <div className='successAlert'>{message.message}</div>
-            }
             <div className="imageContainer">
                 <img src={logo} alt="logo" />
             </div>
@@ -149,7 +143,6 @@ function Nav() {
                         top: '-30rem',
                     })
                 }}
-                setMessage={setMessage}
             />
         </div>
     )

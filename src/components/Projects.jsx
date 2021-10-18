@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import {useHistory} from 'react-router'
-import axios from 'axios'
 import './Projects.css'
-import { baseURL } from './axios'
 import app from './firebase/index'
 const db = app.firestore()
 
@@ -15,10 +13,10 @@ function Pojects() {
 
     useEffect(() => {
     const fetch = async () => {
-      const projectsList = await db.collection('projects').get()
-      setProjects(projectsList.docs.map(doc => (
-        doc.data()
-      )))
+        const projectsList = await db.collection('projects').get()
+        setProjects(projectsList.docs.map(doc => (
+            doc.data()
+        )))
     }
 
     fetch()

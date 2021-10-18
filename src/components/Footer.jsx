@@ -9,8 +9,6 @@ function Footer() {
         top: '-30vw'
     })
 
-    const [message, setMessage] = useState(false)
-
     const formStyles = {
         display: 'grid',
         visibility: contactStyles.visibility,
@@ -73,16 +71,16 @@ function Footer() {
                         <h3>Follow Us On Social Media</h3>
 
                         <div className="socialMediaIcons">
-                            <p className='linkItem'> <a href='http://facebook.com/' target='_blank'>
+                            <p className='linkItem'> <a href='http://facebook.com/' target='_blank' rel="noreferrer">
                                 <i className="fab fa-facebook"></i> Facebook
                             </a> </p>
-                            <p className='linkItem'> <a href='http://instagram.com/' target='_blank'>
+                            <p className='linkItem'> <a href='http://instagram.com/' target='_blank' rel="noreferrer">
                                 <i className="fab fa-instagram"></i> Instagram
                             </a> </p>
-                            <p className='linkItem'> <a href='http://linkedIn.com/' target='_blank'>
+                            <p className='linkItem'> <a href='http://linkedIn.com/' target='_blank' rel="noreferrer">
                                 <i className="fab fa-linkedin"></i> LinkedIn
                             </a> </p>
-                            <p className='linkItem'> <a href='http://twitter.com/' target='_blank'>
+                            <p className='linkItem'> <a href='http://twitter.com/' target='_blank' rel="noreferrer">
                                 <i className="fab fa-twitter"></i> Twitter
                             </a> </p>
                         </div>
@@ -98,7 +96,6 @@ function Footer() {
                         top: '-30rem',
                     })
                 }}
-                setMessage={setMessage}
             />
         </div>
     )

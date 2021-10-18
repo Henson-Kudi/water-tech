@@ -19,7 +19,7 @@ function Services() {
             <div className="servicesContainer">
                 <div className="serviceGridItem">
                     <div className="serviceImageContainer">
-                        <img src={projectDesign} alt="Service Image" />
+                        <img src={projectDesign} alt="Service" />
                     </div>
                     <div className="serviceText">
                         <h2>Custom design + build</h2>
@@ -31,7 +31,7 @@ function Services() {
 
                 <div className="serviceGridItem">
                     <div className="serviceImageContainer">
-                        <img src={architectureAndEngineering} alt="Service Image" />
+                        <img src={architectureAndEngineering} alt="Service" />
                     </div>
                     <div className="serviceText">
                         <h2>Architecture + engineering</h2>
@@ -43,7 +43,7 @@ function Services() {
 
                 <div className="serviceGridItem">
                     <div className="serviceImageContainer">
-                        <img src={interiorAndExteriorDesign} alt="Service Image" />
+                        <img src={interiorAndExteriorDesign} alt="Service" />
                     </div>
                     <div className="serviceText">
                         <h2>Interior + exterior design</h2>
@@ -55,7 +55,7 @@ function Services() {
 
                 <div className="serviceGridItem">
                     <div className="serviceImageContainer">
-                        <img src={construction} alt="Service Image" />
+                        <img src={construction} alt="Service" />
                     </div>
                     <div className="serviceText">
                         <h2>Project implementation</h2>
