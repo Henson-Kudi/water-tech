@@ -32,6 +32,7 @@ function ContactForm({contactStyles, handleCancel, message, setMessage}) {
                         }, (error) => {
                             console.log(error.text);
                         });
+                        e.target.reset()
                         setContactDetails({})
                         setTimeout(() => {
                             handleCancel()
@@ -54,7 +55,7 @@ function ContactForm({contactStyles, handleCancel, message, setMessage}) {
 
     return (
         <div className="Contact" style={contactStyles}>
-            <form ref={formRef}>
+            <form ref={formRef} onSubmit={handleSubmit}>
                 <div className="formContainer">
                     <h3>Contact Form</h3>
                     <div className="formElement">
@@ -77,8 +78,8 @@ function ContactForm({contactStyles, handleCancel, message, setMessage}) {
                     </div>
 
                     <div className="submitOptions">
-                        <button type='submit' className="btn btnCancel" onClick={handleCancel}>Cancel</button>
-                        <button className="btn btnSubmit" onClick={handleSubmit}>Submit</button>
+                        <button type='button' className="btn btnCancel" onClick={handleCancel}>Cancel</button>
+                        <button type='submit' className="btn btnSubmit">Submit</button>
                     </div>
                 </div>
             </form>

@@ -15,27 +15,27 @@ function App() {
       <Switch>
         <div className="App">
           <Nav/>
-          <Route path="/projects/:projectId" exact={true}>
-            <SingleProject/>
+          <Route path="/" exact>
+            <HomePage/>
           </Route>
 
-          <Route path="/services" exact={true}>
+          <Route path="/services" exact>
             <Services/>
           </Route>
 
-          <Route path="/projects" exact={true}>
+          <Route path="/projects" exact>
             <Projects/>
           </Route>
 
-          <Route path="/about" exact={true}>
+          <Route path="/about" exact>
             <About/>
           </Route>
-          <Route path="/new-project" exact={true}>
+          <Route path="/new-project" exact>
             <NewProject/>
           </Route>
 
-          <Route path="/" exact={true}>
-            <HomePage/>
+          <Route path="/projects/:projectId" exact>
+            <SingleProject/>
           </Route>
 
           <Footer/>
