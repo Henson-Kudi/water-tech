@@ -25,7 +25,7 @@ function ContactForm({contactStyles, handleCancel}) {
             if (contactDetails.email) {
                 if (contactDetails.tel) {
                     if (contactDetails.message) {
-                        emailjs.sendForm('service_ypi7l5l', 'template_lplb987', formRef.current, 'user_LhB6BmKHXG6o83l1skINd')
+                        emailjs.sendForm('service_tjxqvl1', 'template_eihgwz2', formRef.current, 'user_c0Oab2EnimSc6FCtYaSPY')
                         .then((result) => {
                             toast('Message received. We\'ll contact you soon.')
                         }, (error) => {
